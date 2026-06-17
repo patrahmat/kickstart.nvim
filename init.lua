@@ -99,7 +99,7 @@ do
   vim.g.maplocalleader = ' '
 
   -- Set to true if you have a Nerd Font installed and selected in the terminal
-  vim.g.have_nerd_font = true 
+  vim.g.have_nerd_font = true
 
   -- [[ Setting options ]]
   --  See `:help vim.o`
@@ -107,10 +107,10 @@ do
   --  For more options, you can see `:help option-list`
 
   -- Make line numbers default
-  vim.o.number = true
+  vim.o.number = false
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
-  vim.o.relativenumber = true
+  vim.o.relativenumber = false
 
   -- Enable mouse mode, can be useful for resizing splits for example!
   vim.o.mouse = 'a'
@@ -643,7 +643,7 @@ do
 
       -- Rename the variable under your cursor.
       --  Most Language Servers support renaming across files, etc.
-      map('grn', vim.lsp.buf.rename, '[R]e[n]ame')
+      map('<leader>r', vim.lsp.buf.rename, '[R]e[n]ame')
 
       -- Execute a code action, usually your cursor needs to be on top of an error
       -- or a suggestion from your LSP for this to activate.
